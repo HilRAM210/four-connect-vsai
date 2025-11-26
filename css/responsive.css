@@ -1,0 +1,284 @@
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .game-container {
+    padding: 25px;
+  }
+
+  .board {
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 8px;
+    padding: 15px;
+  }
+
+  .cell {
+    width: 60px;
+    height: 60px;
+  }
+
+  .status {
+    font-size: 1.6rem;
+  }
+
+  .player-name {
+    font-size: 1rem;
+  }
+
+  .move-number {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .game-container {
+    padding: 20px 15px;
+    border-radius: 20px;
+  }
+
+  .game-info {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .player-card {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+
+  .player-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .vs-text {
+    font-size: 1.2rem;
+    order: -1;
+  }
+
+  .board-wrapper {
+    margin: 20px 0;
+  }
+
+  .board {
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(6, 40px);
+    gap: 5px;
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .cell {
+    width: 40px;
+    height: 40px;
+  }
+
+  .status {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    min-height: 40px;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  .ai-controls {
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .algorithm-info {
+    padding: 15px;
+  }
+
+  .algorithm-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .algorithm-info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .move-number {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .game-container {
+    padding: 15px 10px;
+    border-radius: 15px;
+  }
+
+  .game-info {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .player-card {
+    padding: 8px 12px;
+  }
+
+  .player-icon {
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+  }
+
+  .player-name {
+    font-size: 0.9rem;
+  }
+
+  .board {
+    grid-template-columns: repeat(7, 35px);
+    grid-template-rows: repeat(6, 35px);
+    gap: 4px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .cell {
+    width: 35px;
+    height: 35px;
+  }
+
+  .status {
+    font-size: 1.1rem;
+    margin: 15px 0;
+  }
+
+  button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .algorithm-info {
+    padding: 12px;
+  }
+
+  .algorithm-info h3 {
+    font-size: 1rem;
+  }
+
+  .algorithm-info p {
+    font-size: 0.85rem;
+  }
+
+  .move-number {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .board {
+    grid-template-columns: repeat(7, 30px);
+    grid-template-rows: repeat(6, 30px);
+    gap: 3px;
+    padding: 8px;
+  }
+
+  .cell {
+    width: 30px;
+    height: 30px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .player-name {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  body {
+    padding: 10px;
+  }
+
+  .game-container {
+    padding: 15px;
+  }
+
+  .board {
+    grid-template-columns: repeat(7, 35px);
+    grid-template-rows: repeat(6, 35px);
+    gap: 4px;
+    padding: 10px;
+  }
+
+  .cell {
+    width: 35px;
+    height: 35px;
+  }
+
+  .game-info {
+    flex-direction: row;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+  }
+
+  .player-card {
+    width: auto;
+  }
+
+  .vs-text {
+    order: 0;
+  }
+
+  .status {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .cell {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0);
+  }
+}

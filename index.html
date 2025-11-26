@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect Four - Minimax vs MCTS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI BATTLE: CONNECT FOUR</h1>
+        <div class="subtitle">Minimax vs MCTS - Visualisasi Algoritma</div>
+      </header>
+
+      <div class="game-container">
+        <div class="game-info">
+          <div class="player-card" id="player1-card">
+            <div class="player-icon player1"></div>
+            <div class="player-name">🧠 Minimax</div>
+          </div>
+          <div class="vs-text">VS</div>
+          <div class="player-card" id="player2-card">
+            <div class="player-icon player2"></div>
+            <div class="player-name">🎲 MCTS</div>
+          </div>
+        </div>
+
+        <div class="status" id="status">
+          Klik 'Mulai Pertarungan' untuk simulasi!
+        </div>
+
+        <div class="board-wrapper">
+          <div class="board" id="board"></div>
+        </div>
+
+        <div class="controls">
+          <button id="start-btn"><span>▶️ Mulai Pertarungan</span></button>
+          <button id="swap-btn"><span>🔄 Tukar Urutan</span></button>
+          <button id="toggle-ai-btn"><span>🤖 Ganti AI</span></button>
+          <button id="reset-btn"><span>🔄 Reset Game</span></button>
+        </div>
+
+        <div class="ai-controls">
+          <div class="algorithm-info">
+            <h3>📚 Informasi Algoritma</h3>
+            <p>
+              <strong>Player:</strong> Klik pada kolom untuk menaruh koin Anda.
+            </p>
+            <p>
+              <strong>Minimax AI:</strong> Algoritma pencarian pohon dengan
+              evaluasi posisi (Depth: 8).
+            </p>
+            <p>
+              <strong>MCTS AI:</strong> Algoritma berbasis simulasi acak
+              (Iterations: 5000).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/minimax.js"></script>
+    <script src="js/mcts.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
