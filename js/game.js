@@ -12,7 +12,7 @@ class ConnectFourGame {
     this.currentAI = "minimax";
 
     this.minimaxAI = new MinimaxAI(8);
-    this.mctsAI = new MCTSAI(5000, 8000);
+    this.mctsAI = new MCTSAI(8000, 8000);
 
     this.initializeElements();
     this.attachEventListeners();
